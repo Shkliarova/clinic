@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-container">
+        <nav class="header-navigation">
+        <a href="./index.html" class="logo link header-logo">Якесь<span class="header-accent-logo">Лого</span></a>
+        <ul class="list header-list">
+            <li><a class="list-item link current-page" href="./index.html">Головна</a></li>
+            <li><a class="list-item link" href="./portfolio.html">Послуги</a></li>
+        </ul>
+        </nav>
+        <address class="adress-title">
+            <svg width="28" height="28">
+                <use href="./images/icons.svg#clock"></use>
+            </svg>
+        <ul class="list adress-list">
+            <li class="clock">07:00 - 00:00</li>
+            <li><a class="adress-item link" href="tel:+380683134912">+38 (068) 313-49-12</a></li>
+        </ul>
+        </address>
+        </div>
+    </header>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="bg-section">
+                <div class="bg-image" style="background-image: linear-gradient(rgba(50, 50, 50, 0.6), rgba(244, 244, 253, 0.4)), url('../images/pexels-pavel-danilyuk-7108392.jpg');"></div>
+                <div class="bg-image" style="background-image: linear-gradient(rgba(50, 50, 50, 0.6), rgba(244, 244, 253, 0.4)), url('../images/pexels-tima-miroshnichenko-8376321.jpg');"></div>
+                <div class="bg-image" style="background-image: linear-gradient(rgba(50, 50, 50, 0.6), rgba(244, 244, 253, 0.4)), url('../images/pexels-tara-winstead-7722913.jpg');"></div>
+                <div class="bg-image" style="background-image: linear-gradient(rgba(50, 50, 50, 0.6), rgba(244, 244, 253, 0.4)), url('../images/pexels-tara-winstead-7722680.jpg');"></div>
+                <div class="bg-image" style="background-image: linear-gradient(rgba(50, 50, 50, 0.6), rgba(244, 244, 253, 0.4)), url('../images/pexels-pixabay-415779.jpg');"></div>
+            </div>
+            <div class="container">
+                <h1 class="hero-title">Щось по типу текст-назва чи шо</h1>
+                <button type="button" class="btn" data-modal-open>Записатися</button>
+            </div>
+        </section>
+
+        <!-- SCROLL-UP -->
+        <button class="scroll-up-btn">
+            <div class="inner-ellipse">
+                <svg class='scroll-up-svg' width='24' height='24'>
+                    <use href = './images/icons.svg#icon-scroll-up-arrow'></use>
+                </svg>
+            </div>
+        </button>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="studio-info">
+                <a class="logo link footer-logo" href="./index.html">Якесь<span class="footer-accent-logo">Лого</span></a>
+                <p class="footer-text">
+                    Ваше серце — наше покликання. Професійний догляд, сучасні методи лікування та підтримка на кожному кроці!
+                </p>
+            </div>
+            <div class="contacts-info">
+                <p class="footer-second-paragraph">вул. Театральна, 17
+                    Первомайськ, Миколаївська область, 55200
+                </p>
+                <ul class="list footer-soc-list"></ul>
+            </div>
+        </div>
+    </footer>
+
+<script type="module" src="./scripts/changeHeroBG.js"></script>
+<script type="module" src="./scripts/renderSocMedia.js"></script>
+<script type="module" src="./scripts/scroll-up.js"></script>
+</body>
+</html>
