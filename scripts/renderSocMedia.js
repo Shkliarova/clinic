@@ -1,5 +1,5 @@
 const footerUL = document.querySelector(".footer-soc-list")
-const teamUL = document.querySelector(".soc-icon-list")
+const teamULs = document.querySelectorAll(".soc-icon-list")
 
 const SVGLinks = [
     { href: "", icon: "#viber-icon" },
@@ -17,4 +17,6 @@ const markup = SVGLinks.map(elem => {
 }).join("");
 
 footerUL.innerHTML = markup;
-teamUL.innerHTML = markup;
+teamULs.forEach(teamUL => {
+    teamUL.innerHTML = markup;
+});
